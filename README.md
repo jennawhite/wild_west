@@ -9,7 +9,7 @@
 
 I can make this much nicer later by going here  -->  [dillinger]
 
-[rover] here I come.
+*[rover] here I come.*
 
 [dillinger]: <http://dillinger.io>
 [rover]: <http://rover.com>
