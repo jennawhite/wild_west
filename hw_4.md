@@ -1,6 +1,8 @@
 #homework 4: chipotle
-### HW 4 - Questions
-#1. Look at the head and the tail of chipotle.tsv in the data subdirectory of this repo.
+### HW 4 - Questions   
+by Jenna White  
+
+#### 1. Look at the head and the tail of chipotle.tsv in the data subdirectory of this repo.
 Think for a minute about how the data is structured. What do you think each column means?
 What do you think each row means? Tell me! (If you're unsure, look at more of the file contents.)
 
@@ -14,21 +16,21 @@ What do you think each row means? Tell me! (If you're unsure, look at more of th
   * item_price - how much the menu item costs
 
 
-#2. How many orders do there appear to be?
+#### 2. How many orders do there appear to be?
 
 **Answer:** 1834
 ```
 $ tail chipotle.tsv
 ```
 
-#3. How many lines are in this file?
+#### 3. How many lines are in this file?
 
 **Answer:** 4623
 ```
 $ wc -l chipotle.tsv
 ```
 
-#4. Which burrito is more popular, steak or chicken?
+#### 4. Which burrito is more popular, steak or chicken?
 
 **Answer:** Chicken
 ```
@@ -36,14 +38,14 @@ $ grep 'Chicken' chipotle.tsv | wc -l # 1565 results
 $ grep 'Steak' chipotle.tsv | wc -l # 706 results
 ```
 
-#5. Do chicken burritos more often have black beans or pinto beans?
+#### 5. Do chicken burritos more often have black beans or pinto beans?
 
 **Answer:** Black Beans
 ```
 $ grep 'Chicken' chipotle.tsv | grep 'Black Beans' | wc -l # 759 results
 $ grep 'Chicken' chipotle.tsv | grep 'Pinto Beans' | wc -l # 265 results
 ```
-#6. Make a list of all of the CSV or TSV files in the our class repo. repo (using a single command). You will be working on your local repo on your laptop. Think about how wildcard characters can help you with this task.
+#### 6. Make a list of all of the CSV or TSV files in the our class repo. repo (using a single command). You will be working on your local repo on your laptop. Think about how wildcard characters can help you with this task.
 
 **Answer:**
 ```
@@ -81,7 +83,7 @@ $ find . -type f -iname "*.csv" -o -iname "*.tsv"
 ./data/yelp.csv
 ```
 
-#7. Count the approximate number of occurrences of the word "dictionary" (regardless of case) across all files of our class repo.
+#### 7. Count the approximate number of occurrences of the word "dictionary" (regardless of case) across all files of our class repo.
 
 **Answer:** 80
 ```
