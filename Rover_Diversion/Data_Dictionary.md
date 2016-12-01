@@ -1,0 +1,57 @@
+## Data Dictionary
+
+- conversation_id: The unique Identifier for a conversation between an owner and a sitter
+- diversion_tickets: How many times has this conversation been triggered for diversion, total
+- first_diversion_ticket: [timestamp] What was the first time a ticket was triggered on this conversation
+- last_diversion_ticket: [timestamp] What was the last time a ticket was triggered on this conversation
+- trigger_content_type_id: What triggered the ticket
+- is_diverting: *RESPONSE VARIABLE* After manual review, was this conversation going to be booked off-platform?
+- requester_id: Unique identifier for the Owner
+- provider_id: Unique identifier for the Sitter
+- convo_added: [timestamp] When was the conversation added to the database
+- start_date: [yyyy/mm/dd] When is the stay scheduled to start
+- days_til_start: Time between now (time of running) and when the stay will start, in days
+- service_type: What service is the owner requesting?
+- provider_first_response_minutes: How long did it take the sitter to respond the first time
+- has_stay: Has the stay ended up booking on the platform?
+- is_repeat_customer: Has this owner booked this sitter on rover before
+- source: What platform was this conversation created on
+- provider_group_id: Is this sitter a RoverGo sitter (value= 2, 3) or a regular marketplace sitter?
+- need_id: Unique identifier for a need
+- requester_was_new_customer: Is this customer new to Rover?
+- years_of_experience: Self-reported years of experience as a dog sitter
+- posted_on_craigslist: Has the sitter used Rover's 'post to craigslist' feature before
+- match_date: [timestamp] if they have become part of the rover match program, when?
+- approved_on: when was their profile approved
+- sitter_user_id: Sitter's unique User ID
+- sitter_account_added: When did the sitter join Rover
+- dog_history: freeform text about their history
+- active: are they currently active on the site
+- gender: female, male, unknown
+- birth_year: year
+- email_verified: have we verified their email
+- ratings_average: [float] what is their average stay rating on Rover
+- ratings_count: how many reviews do they have recorded on Rover
+- testimonial_count: how many testimonials have been filed for them (Sitters request these from friends)
+- profile_quality: numeric rating of profile quality
+- response_percent: What percent of the time does the sitter respond within 24hours to a request
+- response_time: What is the average response time after receiving a request
+- marketing_partner: binary
+- stay_images_global_opt_out: have they opted out of stay images
+- staff_notes: Internal notes from a Rover employee
+- does_not_have_dogs: Does the sitter have a dog?
+- owner_user_id: Unique identifier for the owner of the dog
+- owner_account_added: [timestamp] When was the owner's account added
+- owner_active: Is the owner's account still active
+- owner_gender: What is the owner's gender
+- owner_birth_year: When was the owner born (optional)
+- owner_email_verified: Have we verified the owner's email
+- owner_stay_images_global_opt_out: Has the owner requested to be opted out of stay photos
+- owner_staff_notes: Internal notes from a Rover employee about the owner
+- mg_added: [timestamp] meet and greet added using Rover's tool
+- mg_scheduled_for: [timestamp] date that meet and greet was set for
+- days_until_mg: time between now and meet and greet scheduled start (in days)
+- owner_response: Has the owner responsed
+- happened: Did the meet and greet happen
+- voice_calls: Have voice calls occurred using the Rover number for this conversation
+- calls_duration: how long have the calls lasted
